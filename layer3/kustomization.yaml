@@ -1,0 +1,11 @@
+---
+#https://github.com/SCADA-LTS/Scada-LTS/wiki/Scada-LTS-on-Docker-tutorial
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: SCADALTS
+images:
+  - name: scadalts
+    newTag: v1.0.86
+resources:
+  - scadalts.yaml
+
